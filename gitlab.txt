@@ -1,0 +1,29 @@
+
+fetch and merge cmd
+
+* git fetch
+* git merge development origin/development
+ 
+checkin
+
+git status -s
+git fetch
+git merge development origin/development
+
+If any merge conflicts occur
+----------------------------
+	backup the files
+	git checkout <filename> - only conflict occured files
+	git merge development origin/development
+
+	git merge development origin/development
+	--- Already uptodate
+	meld
+
+git diff <filename>
+git add <filename>
+git status -s
+git commit -m 'fix:css fix made'
+git fetch
+git merge development origin/development
+git push origin development 
